@@ -48,7 +48,7 @@ export class UserFormComponent implements OnInit {
   private initForm(entity: UserInterface): void {
     this.userForm = this.fb.group({
       name: [entity?.name, Validators.required],
-      other: [entity?.other],
+      other: [entity?.other, entity?.other ? Validators.required : null],
       email: [entity?.email, [Validators.required, Validators.email]],
       birthDate: [new Date(entity?.birthDate), Validators.required],
       gender: [entity?.gender, Validators.required],
@@ -69,7 +69,8 @@ export class UserFormComponent implements OnInit {
           name: hobby,
           value: hobby === 'egyéb' ? form.get('other')?.value : null
         }
-      })
+      }),
+      other: form.get('other')?.value
     }
     this.formDataService.setData(data);
     this.snackBar.open('Elmentve', 'Bezár', { duration: 2000 });
