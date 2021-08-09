@@ -1,0 +1,18 @@
+.form-wrapper {
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:50%;
+    min-width: 400px;
+    transform: translate(-50%,-50%);
+    .text--editable {
+        cursor: pointer;
+        width: 100%;
+    }
+    .textarea {
+       min-width: 400px;
+    }
+    .button-wrapper {
+        margin: 20px;
+    }
+}

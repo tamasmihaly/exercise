@@ -1,0 +1,11 @@
+.base-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    .nav-button {
+        position: absolute;
+    }
+    .sidenav button{
+        margin: 10px;
+    }
+}

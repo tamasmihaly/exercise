@@ -1,0 +1,15 @@
+{
+    "name": "Józsi",
+    "other": "valami",
+    "email": "email@mail.com",
+    "birthDate": 1000,
+    "gender": "férfi",
+    "hobbies": [
+        {
+            "name": "biciklizés"
+        },
+        {
+            "name": "sátorozás"
+        }
+    ]
+}

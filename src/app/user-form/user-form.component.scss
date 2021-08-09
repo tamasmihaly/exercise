@@ -1,0 +1,34 @@
+.main-wrapper {
+
+    .form-wrapper {
+        display: flex;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        .card {
+            .card-content {
+                .gender-radio-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 15px 0;
+                }
+                
+                .gender-radio-button {
+                    margin: 5px;
+                }
+                .mat-form-field {
+                    min-width: 300px;
+                }
+                .button-wrapper {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        
+        }
+    }
+}

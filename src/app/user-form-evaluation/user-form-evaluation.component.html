@@ -1,0 +1,25 @@
+<div class="form-wrapper">
+
+    <mat-card class="card">
+        <form [formGroup]="evalForm">
+            <mat-card-title i18n>Űrlap</mat-card-title>
+            <mat-card-content class="card-content">
+                <div *ngIf="!hasEditor" (click)=toggleEditor() class="text--editable">
+                    {{evalForm.get('text')?.value}}
+                    <span class="material-icons">
+                        edit
+                    </span>
+                </div>
+                <mat-form-field *ngIf="hasEditor" [formGroup]="evalForm" class="textarea" appearance="fill">
+                    <mat-label>Ellenőrizze a szöveget</mat-label>
+                    <textarea formControlName="text" matInput placeholder="Kiértékelés helye"></textarea>
+                </mat-form-field>
+                <div class="button-wrapper">
+                    <button mat-button color="primary" *ngIf="hasEditor" (click)="toggleEditor()">Ok</button>
+                    <a mat-button routerLink="/user-form" routerLinkActive="active">Vissza az űrlaphoz</a>
+                </div>
+
+            </mat-card-content>
+        </form>
+    </mat-card>
+</div>
