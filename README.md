@@ -1,7 +1,7 @@
 # get started
-git clone https://github.com/tamasmihaly/exercise.git
-npm i
-ng s --o 
+```git clone https://github.com/tamasmihaly/exercise.git``` \
+```npm i```\
+```ng s --o ```
 
 
 # Probafeladat
