@@ -2,7 +2,7 @@
 
     <mat-card class="card">
         <form [formGroup]="evalForm">
-            <mat-card-title i18n>Űrlap</mat-card-title>
+            <mat-card-title>Adatlap</mat-card-title>
             <mat-card-content class="card-content">
                 <div *ngIf="!hasEditor" (click)=toggleEditor() class="text--editable">
                     {{evalForm.get('text')?.value}}
