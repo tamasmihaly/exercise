@@ -9,7 +9,6 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModules } from './material-modules';
 import { UserFormEvaluationComponent } from './user-form-evaluation/user-form-evaluation.component';
-import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    CKEditorModule,
     MaterialModules,
   ],
   providers: [],
